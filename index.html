@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BarberShop Pro | Premium Grooming</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-title {
+      font-size: 1.75rem;
+    }
+    @media (min-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+    }
+    @media (min-width: 992px) {
+      .hero-title {
+        font-size: 3.5rem;
+      }
+    }
+
+    .pure-css-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 768px) {
+      .pure-css-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 992px) {
+      .pure-css-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .pure-card {
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body class="bg-dark text-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning fs-3" href="#">BarberShop Pro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 text-center bg-black mb-4">
+    <div class="container px-sm-2 py-md-4">
+      <h1 class="hero-title fw-bold text-uppercase text-warning mb-3">Mastering The Craft Of Men's Grooming</h1>
+      <p class="lead text-light mb-4">Experience precision cuts, hot towel shaves, and top-tier grooming services.</p>
+      <div class="btn-group" role="group" aria-label="Action Buttons">
+        <a href="#booking" class="btn btn-warning btn-lg fw-bold">Book Now</a>
+        <a href="#services" class="btn btn-outline-light btn-lg">Explore Services</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <section class="mb-5">
+      <h2 class="h3 text-warning border-bottom border-secondary pb-2 mb-4">Featured Packages (Pure CSS Media Queries)</h2>
+      <div class="pure-css-grid text-dark">
+        <div class="pure-card">
+          <h3 class="h5 fw-bold text-dark">Classic Cut</h3>
+          <p class="text-secondary">Traditional haircut finished with a neck shave and hot towel styling.</p>
+          <span class="fw-bold text-dark">$35.00</span>
+        </div>
+        <div class="pure-card">
+          <h3 class="h5 fw-bold text-dark">Beard Trim & Sculpt</h3>
+          <p class="text-secondary">Precision beard shaping, razor line-up, and hot oil conditioning treatment.</p>
+          <span class="fw-bold text-dark">$25.00</span>
+        </div>
+        <div class="pure-card">
+          <h3 class="h5 fw-bold text-dark">The Royal Treatment</h3>
+          <p class="text-secondary">Full haircut, signature hot towel shave, facial treatment, and hair wash.</p>
+          <span class="fw-bold text-dark">$65.00</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="mb-5">
+      <h2 class="h3 text-warning border-bottom border-secondary pb-2 mb-4">Our Work Gallery (Bootstrap Carousel)</h2>
+      <div id="barberCarousel" class="carousel slide rounded shadow border border-secondary overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#barberCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#barberCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#barberCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#barberCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#barberCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#barberCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#barberCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#barberCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#barberCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&h=500&q=80" class="d-block w-100" alt="Barber Shop Interior">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&h=500&q=80" class="d-block w-100" alt="Haircut in Progress">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1200&h=500&q=80" class="d-block w-100" alt="Beard Grooming">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&h=500&q=80" class="d-block w-100" alt="Barber Tools">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1200&h=500&q=80" class="d-block w-100" alt="Fade Haircut">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=1200&h=500&q=80" class="d-block w-100" alt="Styling Products">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&h=500&q=80" class="d-block w-100" alt="Client Styling">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1200&h=500&q=80" class="d-block w-100" alt="Razor Shave">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1200&h=500&q=80" class="d-block w-100" alt="Vintage Chair">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#barberCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#barberCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="services" class="mb-5">
+      <h2 class="h3 text-warning border-bottom border-secondary pb-2 mb-4">Our Master Barbers (Bootstrap 3-Column Grid)</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 bg-secondary text-white border-0 shadow">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&h=300&q=80" class="card-img-top" alt="Barber Alex">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 text-warning">Alex "The Blade"</h3>
+              <p class="card-text">Specializes in classic fades, taper cuts, and razor-sharp lineup designs.</p>
+              <button class="btn btn-warning mt-auto btn-sm fw-bold">Select Barber</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 bg-secondary text-white border-0 shadow">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&h=300&q=80" class="card-img-top" alt="Barber Sarah">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 text-warning">Sarah Jenkins</h3>
+              <p class="card-text">Expert in beard sculpting, hot towel therapy, and modern textured crops.</p>
+              <button class="btn btn-outline-warning mt-auto btn-sm fw-bold">Select Barber</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 bg-secondary text-white border-0 shadow">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=300&q=80" class="card-img-top" alt="Barber Michael">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 text-warning">Michael Vance</h3>
+              <p class="card-text">Master of traditional straight-razor shaves and executive scissor styling.</p>
+              <button class="btn btn-warning mt-auto btn-sm fw-bold">Select Barber</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="row g-4 mb-5">
+      <div class="col-12 col-lg-6">
+        <div class="p-4 bg-secondary rounded shadow h-100">
+          <h2 class="h3 text-warning mb-3">Why Choose BarberShop Pro?</h2>
+          <p class="text-light">We combine old-school barbershop tradition with modern style trends. Enjoy a complimentary beverage, relaxation, and unparalleled craftsmanship during your appointment.</p>
+          <ul class="list-unstyled text-light mt-4">
+            <li class="mb-2">✔ Premium organic grooming products</li>
+            <li class="mb-2">✔ Complimentary coffee or beverage</li>
+            <li class="mb-2">✔ Hot towel wrap with every haircut</li>
+            <li class="mb-2">✔ Highly trained certified barbers</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="p-4 bg-secondary rounded shadow">
+          <h2 class="h3 text-warning mb-3">Book Your Appointment</h2>
+          <form>
+            <div class="mb-3">
+              <label for="fullName" class="form-label text-light">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+            </div>
+            <div class="mb-3">
+              <label for="phoneNum" class="form-label text-light">Phone Number</label>
+              <input type="tel" class="form-control" id="phoneNum" placeholder="+7 (707) 000-0000" required>
+            </div>
+            <div class="mb-3">
+              <label for="serviceSelect" class="form-label text-light">Select Service</label>
+              <select class="form-select" id="serviceSelect" required>
+                <option value="" selected disabled>Choose a service...</option>
+                <option value="1">Classic Haircut ($35)</option>
+                <option value="2">Beard Trim & Sculpt ($25)</option>
+                <option value="3">The Royal Treatment ($65)</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="barberSelect" class="form-label text-light">Preferred Barber</label>
+              <select class="form-select" id="barberSelect">
+                <option value="any" selected>Any Available Barber</option>
+                <option value="alex">Alex "The Blade"</option>
+                <option value="sarah">Sarah Jenkins</option>
+                <option value="michael">Michael Vance</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-warning w-100 fw-bold mt-2">Confirm Reservation</button>
+          </form>
+        </div>
+      </div>
+    </section>
